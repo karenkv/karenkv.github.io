@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "740036c634a8459f90cb5f13e8fbf5d0",
+    "revision": "c0653eb982c858f5d983d4ff34296e52",
     "url": "/index.html"
   },
   {
-    "revision": "efc0fa10b23bd0f47bd3",
+    "revision": "453ca8fc515b75b2319e",
     "url": "/static/css/main.fff35271.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e0cc21cf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "efc0fa10b23bd0f47bd3",
-    "url": "/static/js/main.61d4d176.chunk.js"
+    "revision": "453ca8fc515b75b2319e",
+    "url": "/static/js/main.2d6dabb0.chunk.js"
   },
   {
     "revision": "5f2a348dc275c090ccc8",
     "url": "/static/js/runtime-main.69c1266b.js"
   },
   {
-    "revision": "6e9a8f4cc1ca9b92b9475bade0e04cf5",
-    "url": "/static/media/karen-vu-headshot.6e9a8f4c.JPG"
+    "revision": "8dabc587c232ced6508f1c76d1a33d50",
+    "url": "/static/media/karen-vu-headshot.8dabc587.JPG"
   },
   {
     "revision": "15e4f30be5d7b2c8fd6419c3b14e6389",
