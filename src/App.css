@@ -1,6 +1,22 @@
 .App {
     width: 100vw;
     height: 100vh;
+    padding: 0;
+}
+
+.light {
+    background-color: #F2F2F2;
+    color: #333333;
+}
+
+.dark {
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+.links.dark img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .header {
@@ -8,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .header h1 {
@@ -68,4 +84,84 @@
     .headshot img {
         width: 150px;
     }
+}
+
+.theme {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 18px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 12px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4F4F4F;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #4F4F4F;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.slider:after
+{
+    content:'Light';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 32px;
+    font-size: 10px;
+}
+
+input:checked + .slider:after
+{
+    content:'Dark';
+    left: 18px
 }
