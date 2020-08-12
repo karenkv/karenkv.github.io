@@ -19,12 +19,13 @@ const App = () => {
     return (
         <div className={"App " + theme}>
             <div className="theme">
-                <label className="switch">
-                    <input id="theme-changer" name="theme" type="checkbox" value={theme}
+                <div className="switch">
+                    <label htmlFor="theme-changer"/>
+                    <input id="theme-changer" name="theme-changer" type="checkbox" value={theme}
                            onChange={handleThemeChange}
                            checked={theme === "dark"}/>
                     <span className={"slider " + {theme}}/>
-                </label>
+                </div>
             </div>
             <div className="header">
                 <div className="headshot">
