@@ -18,16 +18,16 @@ function App() {
             </div>
             <div className="links">
                 <a href="https://github.com/karenkv" target="_blank" rel="noopener noreferrer">
-                    <img alt="Github Icon" src={github}/>
+                    <img alt="Github Icon" src={github} width="32px" height="32px"/>
                 </a>
                 <a href="https://devpost.com/karenkv" target="_blank" rel="noopener noreferrer">
-                    <img alt="Devpost Icon" src={devpost}/>
+                    <img alt="Devpost Icon" src={devpost} width="38px" height="32px"/>
                 </a>
                 <a href="https://www.linkedin.com/in/karen-vu/" target="_blank" rel="noopener noreferrer">
-                    <img alt="Linkedin Icon" src={linkedin}/>
+                    <img alt="Linkedin Icon" src={linkedin} width="32px" height="32px"/>
                 </a>
                 <a href={pdf} target="_blank" rel="noopener noreferrer">
-                    <img alt="Resume Icon" src={resume}/>
+                    <img alt="Resume Icon" src={resume} width="32px" height="32px"/>
                 </a>
             </div>
         </div>
