@@ -8,7 +8,9 @@ import pdf from './assets/resume.pdf';
 import './App.css';
 
 const App = () => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            ? "dark" : "light");
 
     const handleThemeChange = () => {
         theme === "light" ? setTheme("dark") : setTheme("light");
@@ -18,7 +20,8 @@ const App = () => {
         <div className={"App " + theme}>
             <div className="theme">
                 <label className="switch">
-                    <input type="checkbox" onChange={handleThemeChange}
+                    <input id="theme-changer" name="theme" type="checkbox" value={theme}
+                           onChange={handleThemeChange}
                            checked={theme === "dark"}/>
                     <span className={"slider " + {theme}}/>
                 </label>
