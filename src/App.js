@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
-import headshot from './assets/karen-vu-headshot.jpeg';
-import github from './assets/github.png';
-import devpost from './assets/devpost.png';
-import linkedin from './assets/linkedin.png';
-import resume from './assets/resume.png';
-import pdf from './assets/resume.pdf';
+import ContactBar from "./components/ContactBar";
+import Header from "./components/Header";
+import ThemeToggle from "./components/ThemeToggle";
 import './App.css';
 
 const App = () => {
@@ -16,30 +13,9 @@ const App = () => {
 
     return (
         <div className={"App " + theme}>
-            <div className="theme-changer">
-                <input type="checkbox" id="theme" onClick={handleThemeChange}/>
-                <label htmlFor="theme"><p className={"label" + theme}>{theme}</p></label>
-            </div>
-            <div className="header">
-                <div className="headshot">
-                    <img alt="Karen Vu's headshot" src={headshot}/>
-                </div>
-                <h1>Hello, World! My name is Karen Vu</h1>
-            </div>
-            <div className={"links " + theme}>
-                <a href="https://github.com/karenkv" target="_blank" rel="noopener noreferrer">
-                    <img alt="Github Icon" src={github} width="32px" height="32px"/>
-                </a>
-                <a href="https://devpost.com/karenkv" target="_blank" rel="noopener noreferrer">
-                    <img alt="Devpost Icon" src={devpost} width="38px" height="32px"/>
-                </a>
-                <a href="https://www.linkedin.com/in/karen-vu/" target="_blank" rel="noopener noreferrer">
-                    <img alt="Linkedin Icon" src={linkedin} width="32px" height="32px"/>
-                </a>
-                <a href={pdf} target="_blank" rel="noopener noreferrer">
-                    <img alt="Resume Icon" src={resume} width="32px" height="32px"/>
-                </a>
-            </div>
+            <ThemeToggle theme={theme} action={handleThemeChange}/>
+            <Header/>
+            <ContactBar theme={theme}/>
         </div>
     );
 }
