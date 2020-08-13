@@ -4,17 +4,17 @@
     padding: 0;
 }
 
-.light {
+.Light {
     background-color: #F2F2F2;
     color: #333333;
 }
 
-.dark {
+.Dark {
     background-color: #333333;
     color: #F2F2F2;
 }
 
-.links.dark img {
+.links.Dark img {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
@@ -86,7 +86,7 @@
     }
 }
 
-.theme {
+.theme-changer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -95,7 +95,7 @@
     padding-right: 10px;
 }
 
-.theme p {
+.theme-changer p {
     position: absolute;
     top: 0.125em;
     margin-top: 0;
@@ -105,17 +105,18 @@
 
 .labelDark {
     margin-left: 0.3em;
+    color: #F2F2F2;
 }
 
 .labelLight {
     margin-left: 1.375em;
 }
 
-.theme input[type=checkbox] {
+.theme-changer input[type=checkbox] {
     display: none;
 }
 
-.theme label {
+.theme-changer label {
     background-color: #E0E0E0;
     border: 2px solid #4F4F4F;
     border-radius: 50px;
@@ -127,7 +128,7 @@
     height: 18px;
 }
 
-.theme label::after {
+.theme-changer label::after {
     background-color: #333333;
     border-radius: 50%;
     cursor: pointer;
@@ -141,12 +142,12 @@
     content: '';
 }
 
-.theme input[type=checkbox]:checked ~ label {
+.theme-changer input[type=checkbox]:checked ~ label {
     background-color: #4F4F4F;
     border-color: #E0E0E0;
 }
 
-.theme input[type=checkbox]:checked ~ label::after {
+.theme-changer input[type=checkbox]:checked ~ label::after {
     background-color: #F2F2F2;
     transform: translateX(30px);
 }

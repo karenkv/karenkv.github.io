@@ -9,17 +9,14 @@ import './App.css';
 
 const App = () => {
     const [theme, setTheme] = useState("Light");
-        // (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        //     ? "dark" : "light");
 
     const handleThemeChange = () => {
         theme === "Light" ? setTheme("Dark") : setTheme("Light");
     }
 
-
     return (
         <div className={"App " + theme}>
-            <div className="theme">
+            <div className="theme-changer">
                 <input type="checkbox" id="theme" onClick={handleThemeChange}/>
                 <label htmlFor="theme"><p className={"label" + theme}>{theme}</p></label>
             </div>
