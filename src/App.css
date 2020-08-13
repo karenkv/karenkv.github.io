@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     padding: 0;
+    transition: all ease-in-out 0.5s;
 }
 
 .Light {
@@ -12,6 +13,10 @@
 .Dark {
     background-color: #333333;
     color: #F2F2F2;
+}
+
+.links {
+    transition: all ease-in-out 0.5s;
 }
 
 .links.Dark img {
@@ -101,6 +106,11 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 12px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .labelDark {
