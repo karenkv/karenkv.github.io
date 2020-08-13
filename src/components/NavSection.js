@@ -1,10 +1,9 @@
 import React from "react";
 import history from '../history.js';
 
-const NavSection = (props) => {
-    const theme = props.theme;
+const NavSection = () => {
     return (
-        <div className={"nav-section " + theme}>
+        <div className={"nav-section"}>
             <div>
                 <button onClick={() => history.push("/about")}>About Me</button>
                 <button onClick={() => history.push("/experience")}>Experience</button>

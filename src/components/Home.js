@@ -15,8 +15,8 @@ const Home = () => {
         <div className={"App " + theme}>
             <ThemeToggle theme={theme} action={handleThemeChange}/>
             <Header/>
-            <ContactBar theme={theme}/>
-            <NavSection theme={theme}/>
+            <ContactBar/>
+            <NavSection/>
         </div>
     );
 }

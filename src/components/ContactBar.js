@@ -5,11 +5,9 @@ import linkedin from "../assets/linkedin.png";
 import pdf from "../assets/resume.pdf";
 import resume from "../assets/resume.png";
 
-const ContactBar = (props) => {
-    const theme = props.theme;
-
+const ContactBar = () => {
     return (
-        <div className={"links " + theme}>
+        <div className={"links"}>
             <a href="https://github.com/karenkv" target="_blank" rel="noopener noreferrer">
                 <img alt="Github Icon" src={github} width="32px" height="32px"/>
             </a>
