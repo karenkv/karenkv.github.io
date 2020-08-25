@@ -28,7 +28,7 @@
     border-right: .1em solid orange;
     white-space: nowrap;
     margin: 25px auto 0;
-    width: 15.75em;
+    width: 16.5em;
     animation:
             typing 4s steps(40, end),
             blink-caret .75s step-end infinite;
